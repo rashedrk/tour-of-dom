@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <header>
+        <h1>welcome to dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, adipisci a. Debitis cumque incidunt rerum omnis officiis minus praesentium tempora nam, quibusdam temporibus aperiam non maiores ipsum dignissimos nisi nostrum.</p>
+    </header>
+    <main>
+        <section id="fruits-container">
+            <h1 id="fruits-title">My fruits</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="places-container">
+            <h1>tourist places</h1>
+            <ul>
+                <li class="important-places">sundarban</li>
+                <li class="important-places">bandarban</li>
+                <li class="important-places">sobujban</li>
+                <li class="other-places">kataban</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const someLi = document.querySelectorAll(".important-places")
+        // console.log(someLi);
+        for (const li of someLi) {
+            console.log(li.innerText);
+        }
+    </script>
+</body>
+</html>
