@@ -19,7 +19,7 @@
         <h1>welcome to dom</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, adipisci a. Debitis cumque incidunt rerum omnis officiis minus praesentium tempora nam, quibusdam temporibus aperiam non maiores ipsum dignissimos nisi nostrum.</p>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1>My awesome DOM</h1>
             <ul>
@@ -39,7 +39,7 @@
         </section>
         <section id="places-container" class="large-text">
             <h1>tourist places</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="important-places">sundarban</li>
                 <li class="important-places">bandarban</li>
                 <li class="important-places">sobujban</li>
@@ -49,6 +49,7 @@
     </main>
 
     <script src="./js/styleInJs.js"></script>
+    <script src="./js/append.js"></script>
     <script>
         const someLi = document.querySelectorAll("#fruits-container li")
         // console.log(someLi);
