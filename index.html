@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .large-text{
+            font-size: 2em;
+        }
+        .text-center{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,15 +20,24 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, adipisci a. Debitis cumque incidunt rerum omnis officiis minus praesentium tempora nam, quibusdam temporibus aperiam non maiores ipsum dignissimos nisi nostrum.</p>
     </header>
     <main>
+        <section>
+            <h1>My awesome DOM</h1>
+            <ul>
+                <li>jalali set</li>
+                <li>sfayet</li>
+                <li>bonobas</li>
+                <li>dom the don</li>
+            </ul>
+        </section>
         <section id="fruits-container">
-            <h1 id="fruits-title">My fruits</h1>
+            <h1 id="fruits-title" class="some-class more-class blue-bg">My fruits</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Carrot</li>
             </ul>
         </section>
-        <section id="places-container">
+        <section id="places-container" class="large-text">
             <h1>tourist places</h1>
             <ul>
                 <li class="important-places">sundarban</li>
@@ -31,14 +48,15 @@
         </section>
     </main>
 
+    <script src="./js/styleInJs.js"></script>
     <script>
         const someLi = document.querySelectorAll("#fruits-container li")
         // console.log(someLi);
         for (const li of someLi) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
         const place = document.querySelector("#places-container li")
-        console.log(place.innerText);
+        // console.log(place.innerText);
     </script>
 </body>
 </html>
