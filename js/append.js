@@ -33,4 +33,16 @@ li3.innerText = 'salad';
 ul.appendChild(li3);
 
 // 3. add the child 
-mainContainer.appendChild(section)
+mainContainer.appendChild(section);
+
+// set innerHTML directly 
+const sectionDress = document.createElement('section');
+sectionDress.innerHTML = `
+<h1>My favorite dress</h1>
+    <ul>
+        <li>shirt</li>
+        <li>pant</li>
+        <li>lungi</li>
+    </ul>
+`;
+mainContainer.appendChild(sectionDress);
